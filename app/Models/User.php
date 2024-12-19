@@ -21,7 +21,7 @@ class User extends Authenticatable
         'nama',
         'username',
         'email',
-        'password',
+        'password', // Password tetap bisa diisi biasa
         'alamat',
         'tempat_lahir',
         'tanggal_lahir',
@@ -36,7 +36,6 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
@@ -47,6 +46,5 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
     ];
 }

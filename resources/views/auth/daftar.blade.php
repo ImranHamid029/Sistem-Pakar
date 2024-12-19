@@ -101,6 +101,15 @@
                                         <input type="text" class="form-control" id="no_hp" name="no_hp" value="{{ old('no_hp') }}">
                                     </div>
                                 </div>
+
+                                
+                                <div class="form-group row">
+    <div class="col-md-12">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+</div>
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary form-control">Daftar</button>
                                 </div>
